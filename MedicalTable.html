@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medicine Table</title>
+  <link rel="stylesheet" href="Assets/Css Files/MedTable.css">
+</head>
+<body>
+    <table class="medicine-table">
+        <thead>
+          <tr>
+            <th class="medicine-table__header">Prescriber code</th>
+            <th class="medicine-table__header">Item code</th>
+            <th class="medicine-table__header">Name, Manner of Administration, and Form & Strength</th>
+            <th class="medicine-table__header">Max qty (packs)</th>
+            <th class="medicine-table__header">Max qty (units)</th>
+            <th class="medicine-table__header">Dispensed price for max qty</th>
+            <th class="medicine-table__header">(Brands)</th>
+            <th class="medicine-table__header">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Rows will be dynamically added using jQuery -->
+        </tbody>
+      </table>
+
+  <button id="addMedicineButton">Add Medicine</button>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="/Assets/Js/medTable.js"></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+.logo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.typography{
+  margin-top: 29px;
+   width: 435px;
+  color: #202020;
+text-align: center;
+font-family: Poppins;
+font-size: 36px;
+font-style: normal;
+font-weight: 500;
+line-height: 48px; /* 133.333% */
+
+}
+
+.logo__img {
+  width: 200px; /* Adjust the width as needed */
+  height: auto;
+}
+.forgotPassword { 
+  margin-top:24px;
+  width: 451px;
+height: 49px;
+flex-shrink: 0;
+  text-align: center;
+  color: #8a8a8a;
+  font-size: 16px;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: 25.5px;
+  word-wrap: break-word;
+}
+form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .form__inputs{
+    margin-left: 90px;
+    padding-left: 24px;
+    border-radius: 12px; 
+    border: 1px solid #8A8A8A;
+    background: #FFF;
+    width: 487px;
+height: 59px;
+flex-shrink: 0;
+margin-top: 25px;
+ 
+}
+a {
+  text-decoration: none;
+   color: #116671;
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.form__button{
+    margin-top: 24px;
+    margin-left:90px ;
+    background-color: #116671; 
+    border-radius: 12px;
+     width: 487px;
+height: 59px;
+flex-shrink: 0;
+  }
+
+.form::placeholder {
+
+width: 159px;
+height: 21px;
+flex-shrink: 0;
+color: #8A8A8A;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 17px; 
+}
+
+.height {
+  height: 100vh;
+}
+hr{
+  width: 565px;
+height: 1px;
+margin-top: 24px;
+}
+.links{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 16px;
+}
+

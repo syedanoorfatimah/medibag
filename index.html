@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="Assets/Css Files/MedTable.css">
+  <link rel="stylesheet" href="Assets/Css Files/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+   
+  <div class="dashboard container-fluid">
+    <div class="row"></div>
+    <div class=" dashboard__col1 col-lg-2 ">
+        <div class="dashboard__logo">
+            <img src="Assets/Images/medibag hub  logo-04 1.jpg" alt="Logo" width="153" height="40">
+          </div>
+      <div class="dashboard__block">
+        <p class="dashboard__block-content">Dashboard</p>
+        <p class="dashboard__block-content">Prescriber Bag</p>
+        <p class="dashboard__block-content">Manage Clinics</p>
+        <p class="dashboard__block-content">Manage Doctors</p>
+        <p class="dashboard__block-content">Manage Orders</p>
+        <p class="dashboard__block-content">Reports</p>
+        <p class="dashboard__block-content">Logout</p>
+      </div>
+    </div>
+    <div class="dashboard__col2  col-lg-10">
+      <div class="dashboard__row">
+        <div class="dashboard__search-block">
+          <input type="text" class="dashboard__search-input" placeholder="Search">
+          <i class="fas fa-search search-icon p-2"></i>
+        </div>
+        <div class="dashboard__profile-block">
+            <button class="dashboard__bell-button">
+  <i  class="far fa-bell"></i>
+              
+            </button>
+            <div class="dashboard__profile-pic"></div>
+           <div style=" margin-left: 16px;"> Profile Name <br><small>Doctor</small>  </div>  
+
+           <div class="dashboard__profile-dropdown">
+            <button class="dashboard__profile-button">
+              <i  class="fas fa-chevron-down"></i>
+            </button>
+            <ul class="dashboard__dropdown-list">
+              <li>Doctor</li>
+              <li>To DO</li>
+              <li>more..s</li>
+            
+            </ul>
+          </div>
+           
+          </div>
+       
+         
+        </div>
+      
+    
+      <div class="dashboard__content">
+        <table class="medicine-table">
+          <thead>
+            <tr>
+              <th class="medicine-table__header">Prescriber code</th>
+              <th class="medicine-table__header">Item code</th>
+              <th class="medicine-table__header">Name, Manner of Administration, and Form & Strength</th>
+              <th class="medicine-table__header">Max qty (packs)</th>
+              <th class="medicine-table__header">Max qty (units)</th>
+              <th class="medicine-table__header">Dispensed price for max qty</th>
+              <th class="medicine-table__header">(Brands)</th>
+              <th class="medicine-table__header">Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Rows will be dynamically added using jQuery -->
+          </tbody>
+        </table>
+  
+    <button id="addMedicineButton">Add Medicine</button>
+  
+      </div>
+    </div>
+  </div>
+</div> 
+</div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="Assets/Js/index.js"></script>
+  <Script src="Assets/Js/medTable.js"></Script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>KO
+</body>
+</html>
