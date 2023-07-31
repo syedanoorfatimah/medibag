@@ -168,7 +168,11 @@ font-size: 14px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
-text-decoration-line: underline;
+text-decoration-line: none;
+
+}
+.login__links:hover {
+  text-decoration-line: underline;
 }
 button a{
   color: #f2efef;

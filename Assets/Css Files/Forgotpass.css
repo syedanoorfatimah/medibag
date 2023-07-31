@@ -58,7 +58,9 @@ font-size: 14px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
-}
+} 
+a:hover{ text-decoration: underline;}
+
 .form__button{
     margin-top: 24px;
     margin-left:90px ;
@@ -96,5 +98,6 @@ margin-top: 24px;
   flex-direction: column;
   text-align: center;
   margin-top: 16px;
+
 }
 
