@@ -55,6 +55,8 @@ margin-top: 50px;
   line-height: normal;
   cursor: pointer;
    padding:8px;
+   word-wrap: break-word;
+
 }
 
 .dashboard__block-content:hover,
