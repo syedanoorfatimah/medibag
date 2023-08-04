@@ -1,0 +1,144 @@
+body {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  margin: 0px;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+.section__left {
+  background: #000;
+  background-image: url(Assets/Images/two-druggists-lab-coats-process-inventory-drugstore\ 1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section__right {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.login_box {
+  width: 50%;
+}
+.section__content {
+  width: 487px;
+  padding: 90px;
+}
+
+.login__logo {
+  margin-top: 106px;
+  width: 100%;
+  height: 100%;
+
+  width: 208px;
+  height: 56px;
+}
+.section__title {
+  width: 385px;
+  margin-top: 25px;
+  color: #202020;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 48px; /* 133.333% */
+}
+
+.section__typography {
+  margin-top: 29px;
+  color: #8a8a8a;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 14.5px; /* 120.833% */
+  width: 575px;
+}
+.section__msg {
+  margin-top: 12px;
+  color: #f52d56;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.section__form {
+  border-bottom: 1px solid rgba(232, 232, 232, 1);
+  margin-bottom: 16px;
+}
+
+.row {
+  margin-bottom: 82.56px;
+  margin-top: 64px;
+  display: flex;
+  gap: 26px;
+  flex-wrap: wrap;
+}
+
+.row :nth-child(1) {
+  padding-left: 19px;
+  flex: 1;
+  min-width: 239px;
+  border-radius: 12px;
+  border: 1px solid #116671;
+  background: #fff;
+  height: 59px;
+  flex-shrink: 0;
+
+  color: #116671;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+.row :nth-child(2) {
+  padding-left: 19px;
+  flex: 1;
+  min-width: 239px;
+  border-radius: 12px;
+  border: 1px solid #8a8a8a;
+  background: #116671;
+  height: 59px;
+  flex-shrink: 0;
+
+  color: #fff;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.section__links {
+  display: inline flex;
+  color: #116671;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: none;
+}
+.section__links:hover {
+  text-decoration-line: underline;
+}
+button a {
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  text-decoration: none;
+}

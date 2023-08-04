@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+     <style> 
+     /* body */
+     body{ padding: 0;
+        margin: 0;
+        height: 100vh;
+         display: grid;
+    grid-template-columns: 232px 1fr; 
+grid-template-rows: auto 1fr;}
+/* header styling */
+     .header{ 
+        height: 132px;
+        grid-column: 2 / 3;
+        grid-row : 1 / 2;
+        display: flex;
+        justify-content: space-between;
+        margin-top: -29px; 
+        border-bottom: 1px solid var(--stroke, #E8E8E8);
+background: #FFF;;
+        
+     }
+/* divide header into 2 sections left and right and make it flex with space between*/
+
+/* right section styling with components */
+
+     .header__left-box{
+        display: flex;
+
+       margin: 70px auto 22px 48px; 
+        justify-content: space-between;
+        border: 1px solid black ;
+        width: 388px;
+        height: 40px;
+        flex-shrink: 0;
+        border-radius: 8px;
+ border: 1px solid var(--stroke, #E8E8E8); 
+background: var(--white, #FFF);
+     }
+     .header__right-box{ 
+    
+        display: flex;
+        justify-content: space-aound;
+
+        /* left section styling with compnents displayed as flex */
+
+     }
+     .header__left-box_search{  
+       margin: 11px auto 11px 20px;
+ border-style: hidden;
+        display: flex;
+   align-content: center;    
+width: 172px;
+height: 18px;
+flex-direction: column;
+justify-content: center;
+outline-style: hidden;
+outline: #EEF3FF;
+
+ }
+ .hearder__left-box_search::placeholder{
+    flex-shrink: 0;
+color: var(--text-10, #A9A9A9);
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+ }
+ .header__left-box_icon{ 
+    margin: 11px 16px 11px auto;
+    width: 18px;
+
+height: 18px;
+
+color: rgba(169, 169, 169, 1);
+ }
+  
+ .header__right-box{
+    margin:70px auto 22px auto ;
+    display: flex;
+    margin-left:333px ;
+
+
+ }
+ .header__right-box_icon{
+    width: 40px;
+height: 40px;
+flex-shrink: 0;
+margin-right: 16px;
+ }
+ .header__right-box_dp{
+    width: 40px;
+height: 40px;
+flex-shrink: 0;
+margin-right: 10px;
+border-radius: 2px;
+background: var(--main-10, #EEF3FF);
+ }
+ .header__typography{
+    color: var(--text-100, #1C1C1C);
+
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+    }
+ small{
+    color: var(--text-10, #A9A9A9);
+font-family: Poppins;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+ }
+ .header__right-box_profile{ display: flex;
+    flex-direction: column;
+
+ }
+
+ .header__dropdown{
+    margin-left: 51px  ;
+    margin-top: 9px;
+ }
+
+
+/* header's styling ends here  */
+
+
+
+
+
+/* sidebar styling */
+/* make side bar display flex in column direction  */
+.dashboard__block {
+margin-top: 5px;
+  width: 256px;
+  height: 391px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+ 
+}
+.dashboard__block-content:hover,
+.dashboard__block-content.clicked {
+  color: #FFF;
+  font-weight: 600;
+  background-color: #116671;
+ 
+flex-shrink: 0;
+border-radius: 2px;
+background: #116671;
+box-shadow: 4px 4px 50px 0px rgba(58, 111, 248, 0.14);
+}
+
+.dashboard__block-content {
+  color: #8A8A8A;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  cursor: pointer;
+  width: 232px;
+height: 42px;
+justify-content: center;
+display: flex;
+align-items: center;
+  
+}
+    .sidebar{
+      
+        grid-column: 1 / 2;
+        grid-row:  1 / 3;
+        display: flex;
+         flex-direction: column;
+         border-right: 1px solid var(--stroke, #E8E8E8);
+background: var(--white, #FFF);
+    }
+    .sidebar__logo-box{ 
+        width: 153px;
+        height: 40px;
+         margin:41px 39px 59px 40px ;
+    }
+    .sidebar__logo{
+        width: 100%;
+        height: 100%;
+    }
+    .sidebar__content-box{ 
+        width: 232px;
+       
+
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+ 
+
+    } 
+    .sidebar__content-typography:hover{ 
+        text-align: center;
+        width: 232px;
+height: 42px;
+flex-shrink: 0;
+border-radius: 2px;
+background: #116671;
+box-shadow: 4px 4px 50px 0px rgba(58, 111, 248, 0.14); 
+color: #FFF;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+padding: 9px 70px 9px 70;
+
+    }
+    .sidebar__content-typography{
+        display: flex;
+        justify-content: start;
+      
+        width: 157px;
+height: 24px;
+flex-shrink: 0;
+margin: auto  38px 37px 29px;
+color: #8A8A8A;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+padding-left: 17px;
+ 
+
+
+    }
+    .sidebar__content-icons{
+        width: 40px;
+        height: 40px; display: flex;
+        justify-content: start; padding-right: 16px;
+    }
+    .sidebar__content-icons:hover {
+        color: white;
+
+    }
+  
+   
+
+  
+
+
+
+
+    .main{
+        background: var(--white, #FFF);
+        grid-column: 2 / 3;
+        grid-row:  2/3;
+    }
+   
+  
+
+    
+    
+    </style>
+</head>
+<body>
+    <!-- header -->
+   <header class="header">
+    <div class=" header__left-box ">
+        <input class= "header__left-box_search" type="text" placeholder="Search type of keywords"> <i class="header__left-box_icon"><img src="Assets/Icon/search-normal.svg" alt="" srcset=""> </i>   </div>
+       
+        <div class="header__right-box header__typography ">
+            <i class="header__right-box_icon"> <img src="Assets/Images/Group 79.svg" alt="" srcset=""> </i>
+            <div class="header__right-box_dp"></div>
+          <div class="header__right-box_profile" ><div>  Profile Name</div> 
+                <small> Doctor</small> </div>
+       <div class="header__dropdown"> <i class="fa-solid fa-caret-down"></i></div>
+             </div>
+   </header>
+   <!-- sidebar -->
+   <section class="sidebar">
+    <div class="sidebar__logo-box"><img src="Assets/Images/medibag hub  logo-04 1.jpg"></div>
+    <div class="dashboard__block">
+        <p class="dashboard__block-content">Dashboard</p>
+        <p class="dashboard__block-content">Prescriber Bag</p>
+        <p class="dashboard__block-content">Manage Clinics</p>
+        <p class="dashboard__block-content">Manage Doctors</p>
+        <p class="dashboard__block-content">Manage Orders</p>
+        <p class="dashboard__block-content">Reports</p>
+        <p class="dashboard__block-content">Logout</p>
+      </div>
+
+
+
+   </section>
+   <!-- main content section -->
+   <main class="main" >  main content section </main>
+<script> $(document).ready(function() {
+    $('.dashboard__block-content').on('click', function() {
+      $('.dashboard__block-content').removeClass('clicked');
+      $(this).addClass('clicked');
+    });
+  }); 
+  </script>
+</body>
+</html>

@@ -1,0 +1,184 @@
+body{ 
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  margin: 0px;
+}
+h1,h2,h3,h4,h5{margin: 0;}
+
+.section__left{
+background: #000;
+ background-image: url(Assets/Images/two-druggists-lab-coats-process-inventory-drugstore\ 1.png);
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+
+
+.section__right{ 
+  display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh; 
+  
+}
+.login_box{
+width: 50%; 
+
+
+
+} 
+
+
+.login__logo{
+
+  width: 100%;
+  height: 100%;
+  margin-bottom: 24px;
+  width: 208px;
+height: 56px;
+}
+.section__title{
+  margin-bottom: 15px;
+  color: #202020;
+text-align: center;
+font-family: Poppins;
+font-size: 36px;
+width: 350px;
+font-style: normal;
+font-weight: 500;
+line-height: 48px; /* 133.333% */
+}
+.form_control{
+  width: 487px;
+  margin-bottom: 25px;
+flex-shrink: 0;
+  border-radius: 12px;
+    border: 1px solid #8A8A8A;
+    background: #FFF;
+    display: flex;
+    padding: 19px 24px;
+    color: #8A8A8A;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+   
+}
+.login_submit{ 
+  color:  #FFF;
+  border: 1px;
+  border-color: #116671;
+  border-radius: 12px;
+background: #116671;
+width:100%;
+height: 59px;
+flex-shrink: 0;
+margin-bottom: 25px;
+
+ 
+
+   
+    padding: 19px 24px;
+    
+}
+.login_submit:hover{ 
+  border:1px solid green;
+  color: #116671 ;
+  background-color:  #FFF;
+  
+}
+.form_group {
+  margin-bottom:25px;
+  display: flex;
+}
+
+label{
+ 
+
+
+color: #8A8A8A;
+font-family: Poppins;
+
+font-style: normal;
+
+
+
+} 
+
+.section__form {
+display: flex;
+flex-direction: column;
+gap: 26px;
+border-bottom: 1px solid rgba(232, 232, 232, 1);
+  margin-bottom: 16px;
+}
+
+.row button {
+flex: 1;
+min-width: 239px;
+border-radius: 12px;
+border: 1px solid #8A8A8A;
+
+height: 59px;
+flex-shrink: 0;
+margin-bottom:20px ;
+background: #116671;
+    color: #f2efef;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+.row  {
+display: flex;
+gap: 26px;
+flex-wrap: wrap;
+}
+
+.row input {
+  padding-left:19px;
+flex: 1;
+min-width: 239px;
+border-radius: 12px;
+border: 1px solid #8A8A8A;
+background: #FFF;
+height: 59px;
+flex-shrink: 0;
+
+    color: #8A8A8A;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.full-width {
+width: 100%;
+}
+
+
+
+.login__links{
+  display: contents;
+  color: #116671;
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-decoration-line: none;
+
+}
+.login__links:hover {
+  text-decoration-line: underline;
+}
+button a{
+  color: #f2efef;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: none;
+}

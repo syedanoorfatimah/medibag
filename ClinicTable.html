@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My DataTable</title>
+  <!-- Include jQuery and DataTables -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+
+  <!-- Add DataTables CSS -->
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
+  
+  <!-- Custom CSS -->
+  <style>
+    /* Optional: Customize the table's appearance */
+    #myDataTable {
+      border-collapse: separate;
+      width: 100%;
+      border-spacing: 0; /* Remove spacing between cells */
+    }
+
+    #myDataTable td {
+      padding: 8px;
+      color: #8A8A8A;
+      font-family: Poppins;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    /* Center-align row content */
+    #myDataTable tbody tr {
+      text-align: center;
+    }
+
+    /* Rounded corners for each row */
+    #myDataTable tbody tr {
+      border-radius: 5px;
+      border-bottom: 1px solid #ddd; /* Add bottom border */
+    }
+
+    /* Remove border from table header */
+    #myDataTable th {
+      border-bottom: 1px solid black;
+    }
+    .border-bottom{
+      border-bottom:1px solid black;
+    }
+  </style>
+</head>
+<body>
+  <!-- Table markup -->
+  <table id="myDataTable">
+    <thead>
+      <tr>
+        <th>Doctor Name</th>
+        <th>Address</th>
+        <th>Prescriber Number</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="border-bottom">
+        <td>Dr. John Doe</td>
+        <td>123 Main St, New York</td>
+        <td>123456789</td>
+        <td>Edit | Delete</td>
+      </tr>
+      <!-- Add more rows here if needed -->
+    </tbody>
+  </table>
+
+  <!-- Add Clinic button to add new rows -->
+  <button id="addClinic">Add Clinic</button>
+
+  <!-- Initialize DataTables -->
+  <script>
+    $(document).ready(function() {
+      $('#myDataTable').DataTable({
+        "paging": true,
+        "searching": false,
+        "ordering": true,
+        "lengthChange": false,
+        "info": false,
+        "pagging":false
+        // Add more options here
+      });
+
+      // Add Clinic button functionality
+      $('#addClinic').on('click', function() {
+        var newRow = '<tr class="border-bottom">' +
+                      '<td>Doctor Name</td>' +
+                      '<td>Address</td>' +
+                      '<td>Prescriber Number</td>' +
+                      '<td>Edit | Delete</td>' +
+                      '</tr>';
+
+        $('#myDataTable tbody').append(newRow);
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+/* General table styles */
+.medicine-table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .medicine-table__header {
+ 
+    align-items: flex-start;
+    flex-shrink: 0;
+    border: 0.5px solid #CCC;
+    color: #116671;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 17.462px;
+  }
+  
+  .medicine-table__header:nth-child(1) {
+    width: 81px;
+    height: 38px;
+    padding: 0px 10.92px 3.41px 11.53px;
+  }
+  
+  .medicine-table__header:nth-child(2) {
+    width: 59px;
+    height: 38px;
+    padding: 1px 14.79px 3.41px 15.77px;
+  }
+  
+  
+  .medicine-table__header:nth-child(3) {
+    width: 62px;
+    height: 51px;
+    flex-direction: column;
+    justify-content: center;
+  }  
+  .medicine-table__header:nth-child(4) {
+    width: 62px;
+    height: 51px;
+    flex-direction: column;
+    justify-content: center;
+  } 
+  
+  .medicine-table__header:nth-child(5) {
+    width: 60px;
+    height: 38px;
+    padding: 7px 5.3px 1.86px 7.62px;
+    align-items: flex-start;
+  }
+  
+  .medicine-table__header:nth-child(6) {
+    width: 125px;
+    height: 38px;
+    padding: 0px 5.91px 3.41px 7.86px;
+  }
+  
+  .medicine-table__header:nth-child(7) {
+    width: 138px;
+    height: 38px;
+    padding: 10px 91.16px 2.96px 57px;
+  }
+  
+  .medicine-table__header:nth-child(8) {
+    width: 88px;
+    height: 38px;
+    padding: 10px 91.16px 2.96px 16px;
+  }
+  
